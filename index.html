@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sylviastyles.css" />
+    <script src="sylvia.js" defer></script>
+    <title>Sylvia Ferrys Kitchen</title>
+<!-- Adding fonts for the elegant serif typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <!-- HEADER -->
+<header class="site-header">
+    <a href="#" class="logo-container">
+        <div class="logo-icon">
+            <svg viewBox="0 0 100 100">
+                <path d="M50 10 Q60 40 90 50 Q60 60 50 90 Q40 60 10 50 Q40 40 50 10 Z" />
+                <path d="M50 25 Q55 45 75 50 Q55 55 50 75 Q45 55 25 50 Q45 45 50 25 Z" stroke="#c8a45d" />
+            </svg>
+        </div>
+        <div class="logo-text-wrapper">
+            <h1 class="logo-title">SYLVIA FERRYS</h1>
+            <div class="logo-subtitle">KITCHEN</div>
+            <div class="logo-tagline">Personal Chef Experience</div>
+        </div>
+    </a>
+
+    <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+        <svg viewBox="0 0 24 24">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+        </svg>
+    </button>
+
+    <div class="header-content" id="header-content">
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pages <span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Menu Experience</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Book A Chef</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services <span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Private Dining</a></li>
+                        <li><a href="#">Special Events</a></li>
+                        <li><a href="#">Weekly Meal Prep</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="tel:+10331234567" class="phone-contact">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                +(234) 812-573-5737
+            </a>
+            <button class="btn btn-gold">Book A Chef</button>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Luxury Personal Chef Experience</span>
+            
+            <h1 class="hero-title">Elevated Dining,<br>Crafted Around You</h1>
+            
+            <p class="hero-description">
+                Experience restaurant-quality cuisine in the comfort of your home 
+                with personalized menus, seasonal ingredients, and unforgettable 
+                culinary moments tailored to your lifestyle.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#" class="btn btn-gold">Book A Private Experience</a>
+                <a href="#" class="btn btn-outline">Explore Our Services</a>
+            </div>
+            
+            <div class="trusted-section">
+                <div>
+                    <div class="trusted-label">Trusted by clients in</div>
+                    <div class="avatars-wrapper">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="Client 1" class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Client 2" class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Client 3" class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Client 4" class="avatar">
+                    </div>
+                </div>
+                <div class="trusted-text-container">
+                    <span class="trusted-number">100+</span>
+                    <span class="trusted-text">Happy clients</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <img src="./Images/sylvia chef.png" alt="Female Chef portrait" class="hero-image">
+        </div>
+    </section>
+
+    <!-- NEW FEATURES SECTION -->
+    <section class="features-section">
+        <div class="features-container">
+            
+            <!-- Feature 1 -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"></path>
+                        <path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"></path>
+                        <path d="M9 10h6"></path><path d="M9 14h6"></path><path d="M9 18h6"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Custom<br>Menus</h3>
+                <p class="feature-desc">Tailored to your tastes,<br>dietary needs and lifestyle.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 8c0 4.418 3.582 8 8 8s8-3.582 8-8"></path>
+                        <path d="M2 8h20"></path><path d="M12 16v5"></path><path d="M9 21h6"></path>
+                        <path d="M15 3 9 8"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Premium<br>Ingredients</h3>
+                <p class="feature-desc">We use fresh, seasonal and<br>high-quality ingredients.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polygon points="12 15 9.5 16.5 10.2 13.5 8 11.5 11 11.2 12 8.5 13 11.2 16 11.5 13.8 13.5 14.5 16.5"></polygon>
+                    </svg>
+                </div>
+                <h3 class="feature-title">In-Home<br>Experience</h3>
+                <p class="feature-desc">Relax and enjoy as we<br>prepare your kitchen.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 17c-2 0-4-1-6-3l-2-2"></path>
+                        <path d="M22 14v1a4 4 0 0 1-4 4H7"></path>
+                        <polygon points="12 11 9.5 12.5 10.2 9.5 8 7.5 11 7.2 12 4.5 13 7.2 16 7.5 13.8 9.5 14.5 12.5"></polygon>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Impeccable<br>Service</h3>
+                <p class="feature-desc">Professional, discreet and<br>dedicated to every detail.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section">
+        <div class="about-container">
+            
+            <div class="about-content">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">Passion For Food.<br>Commitment To You</h2>
+                <p class="section-description">
+                    We believe that every meal is an opportunity to create memorable 
+                    moments. Our mission is to bring people together through 
+                    exceptional cuisine and personalized service.
+                </p>
+                
+             <!-- Target container for the intersection observer -->
+                <div class="about-stats" id="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10" data-suffix="+">0+</span>
+                        <span class="stat-text">Years of Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="300" data-suffix="+">0+</span>
+                        <span class="stat-text">Unique Menus</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100" data-suffix="+">0+</span>
+                        <span class="stat-text">Happy Clients</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-gold">Learn More About Us</a>
+            </div>
+
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beautifully plated dish" class="about-img img-1">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chef preparing meal" class="about-img img-2">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Romantic elegant dining" class="about-img img-3">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+<!-- OUR SERVICES SECTION -->
+    <section class="services-section">
+        <div class="services-header">
+            <div class="services-title-wrapper">
+                <span class="section-subtitle">Our Services</span>
+                <h2 class="section-title" style="margin-bottom: 0;">Culinary Experiences Made For You</h2>
+            </div>
+            <div class="services-intro">
+                From intimate dinners to special celebrations, we offer a variety of services designed to make every occasion unique and stress-free. Our goal is to ensure that each event is a memorable experience filled with joy.
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Private Dinners" class="service-img">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Private Dinners</h3>
+                    <p class="service-desc">Intimate and exclusive dinners prepared just for you and your guests.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Weekly Meal Prep" class="service-img">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Weekly Meal Prep</h3>
+                    <p class="service-desc">Healthy, personalized meals prepared weekly to save time and meet needs.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Special Events" class="service-img">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Special Events</h3>
+                    <p class="service-desc">Custom menus for birthdays and special celebrations.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dietary Needs" class="service-img">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Dietary Needs</h3>
+                    <p class="service-desc">Menus adapted to dietary restrictions and specific preferences.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-footer">
+            <a href="#" class="btn btn-gold">View All Services</a>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works-section">
+        <div class="how-header">
+            <div class="how-ornament">
+                <svg viewBox="0 0 100 30">
+                    <path d="M10 15 Q 30 5, 50 15 Q 70 25, 90 15" fill="none" stroke="#c8a45d" stroke-width="1.5"/>
+                    <circle cx="50" cy="15" r="3" fill="#c8a45d"/>
+                </svg>
+            </div>
+            <span class="section-subtitle" style="text-align: center;">How It Works</span>
+            <h2 class="how-title">Simple, Personal &amp; Seamless</h2>
+        </div>
+
+        <div class="how-grid">
+            <div class="how-step">
+                <div class="how-icon-wrapper">
+                    <div class="how-circle">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                            <path d="M6 7h10"></path><path d="M6 11h10"></path><path d="M6 15h6"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="step-number-title">01. Book</h3>
+                <p class="step-description">Choose your date and tell us about your preferences.</p>
+            </div>
+
+            <div class="how-step">
+                <div class="how-icon-wrapper">
+                    <div class="how-circle">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                            <text x="12" y="18" font-size="7" fill="#c8a45d" text-anchor="middle" font-family="sans-serif" font-weight="bold">31</text>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="step-number-title">02. Plan</h3>
+                <p class="step-description">We create a custom menu just for you.</p>
+            </div>
+
+            <div class="how-step">
+                <div class="how-icon-wrapper">
+                    <div class="how-circle">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.1 5.1 0 0 1 9.18 0A4 4 0 0 1 18 13.87V21H6Z"></path>
+                            <line x1="6" y1="17" x2="18" y2="17"></line>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="step-number-title">03. Cook</h3>
+                <p class="step-description">We cook in your kitchen while you relax.</p>
+            </div>
+
+            <div class="how-step">
+                <div class="how-icon-wrapper">
+                    <div class="how-circle">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="step-number-title">04. Enjoy</h3>
+                <p class="step-description">Savor every bite and we handle the cleanup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY FEATURED MENUS (6 PLATES HORIZONTAL SCROLL) -->
+    <section class="sticky-menu-section" id="sticky-menu-section">
+        <div class="sticky-menu-container">
+            <div class="sticky-menu-left">
+                <span class="section-subtitle">Featured Menus</span>
+                <h2 class="section-title">A Taste Of What We Create</h2>
+                <p class="section-description">
+                    Experience thoughtfully curated dishes crafted with seasonal ingredients, refined techniques and unforgettable presentation designed for intimate luxury dining.
+                </p>
+                <a href="#" class="btn btn-gold">See Full Menu</a>
+            </div>
+
+            <div class="sticky-menu-right" id="sticky-menu-right">
+                <div class="plates-track">
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-81111420b4d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Seared Filet Mignon" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Seared Filet Mignon</h3>
+                                <span class="plate-price">$20</span>
+                            </div>
+                            <p class="plate-desc">Truffle potato purée, roasted vegetables and red wine reduction.</p>
+                        </div>
+                    </div>
+
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Burrata & Heirloom Tomatoes" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Burrata &amp; Heirloom</h3>
+                                <span class="plate-price">$9</span>
+                            </div>
+                            <p class="plate-desc">Fresh basil, aged balsamic glaze and artisan olive oil.</p>
+                        </div>
+                    </div>
+
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pan-Seared Atlantic Salmon" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Pan-Seared Salmon</h3>
+                                <span class="plate-price">$24</span>
+                            </div>
+                            <p class="plate-desc">Served over lemon herb risotto with crispy asparagus spears.</p>
+                        </div>
+                    </div>
+
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Herb Crusted Rack of Lamb" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Rack of Lamb</h3>
+                                <span class="plate-price">$32</span>
+                            </div>
+                            <p class="plate-desc">Mint chimichurri crust, roasted garlic mash and rosemary jus.</p>
+                        </div>
+                    </div>
+
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lobster Risotto" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Lobster Risotto</h3>
+                                <span class="plate-price">$28</span>
+                            </div>
+                            <p class="plate-desc">Butter poached Maine lobster tail over creamy saffron arborio rice.</p>
+                        </div>
+                    </div>
+
+                    <div class="plate-card">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Artisan Dark Chocolate Tart" class="plate-image">
+                        <div class="plate-info">
+                            <div class="plate-header-row">
+                                <h3 class="plate-name">Chocolate Tart</h3>
+                                <span class="plate-price">$12</span>
+                            </div>
+                            <p class="plate-desc">Valrhona single-origin ganache with sea salt flakes and berries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY TESTIMONIALS SECTION (CONTINUOUS MARQUEE) -->
+    <section class="sticky-testimonials-section">
+        <div class="sticky-testimonials-container">
+            <div class="testimonials-left">
+                <span class="section-subtitle">What Our Clients Say</span>
+                <h2 class="section-title">Experiences That Speak For Themselves</h2>
+                <p class="section-description" style="margin-bottom: 0;">
+                    Read genuine stories and feedback from clients who transformed their family dinners, milestones, and daily routines into extraordinary culinary events.
+                </p>
+            </div>
+
+            <div class="testimonials-right">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">The meal prep transformed our routine with quality, beautifully prepared meals and an effortless experience.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=11" alt="Daniel R." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Daniel R.</h4>
+                                <span class="author-title">Weekly Meal Prep</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Our anniversary dinner was remarkable, akin to a Michelin-star restaurant, with exceptional service and flavors.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Olivia T." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Olivia T.</h4>
+                                <span class="author-title">Special Occasion Dinner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Every detail felt thoughtfully curated. From the presentation to the flavors, the entire evening was elegant and, intimat.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Jessica M." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Jessica M.</h4>
+                                <span class="author-title">Private Dinner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Sylvia made our corporate gathering absolute perfection. Professionalism and exquisite flavors combined!</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Marcus K." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Marcus K.</h4>
+                                <span class="author-title">Corporate Event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">The meal prep transformed our routine with quality, beautifully prepared meals and an effortless experience.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=11" alt="Daniel R." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Daniel R.</h4>
+                                <span class="author-title">Weekly Meal Prep</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Our anniversary dinner was remarkable, akin to a Michelin-star restaurant, with exceptional service and flavors.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Olivia T." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Olivia T.</h4>
+                                <span class="author-title">Special Occasion Dinner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Every detail felt thoughtfully curated. From the presentation to the flavors, the entire evening was elegant and, intimat.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Jessica M." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Jessica M.</h4>
+                                <span class="author-title">Private Dinner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">&ldquo;</div>
+                        <p class="testimonial-text">Sylvia made our corporate gathering absolute perfection. Professionalism and exquisite flavors combined!</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="testimonial-author-row">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Marcus K." class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Marcus K.</h4>
+                                <span class="author-title">Corporate Event</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- CALL TO ACTION (CTA) BANNER SECTION -->
+    <section class="cta-banner-section">
+        <div class="cta-banner-container">
+            <h2 class="cta-title">Ready To Enjoy An Unforgettable Culinary Experience?</h2>
+            <a href="#" class="btn btn-gold">Book Your Chef</a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+<footer class="site-footer">
+    <div class="footer-content-grid">
+        <!-- Col 1: Brand & Desc -->
+        <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50 10 Q60 40 90 50 Q60 60 50 90 Q40 60 10 50 Q40 40 50 10 Z" />
+                    <path d="M50 25 Q55 45 75 50 Q55 55 50 75 Q45 55 25 50 Q45 45 50 25 Z" stroke="#c8a45d" />
+                </svg>
+                <span class="footer-logo-text">SYLVIA FERRYS</span>
+            </a>
+            <p class="footer-brand-desc">
+                Crafting unforgettable private dining experiences through refined cuisine, elegant presentation and personalized hospitality.
+            </p>
+        </div>
+
+        <!-- Col 2: Our Pages -->
+        <div>
+            <h3 class="footer-col-title">Our Pages</h3>
+            <ul class="footer-links-list">
+                <li><a href="#" class="footer-link">Homepage</a></li>
+                <li><a href="#" class="footer-link">About Us</a></li>
+                <li><a href="#" class="footer-link">Services</a></li>
+                <li><a href="#" class="footer-link">Menu Experience</a></li>
+                <li><a href="#" class="footer-link">Gallery</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+            <h3 class="footer-col-title">Services</h3>
+            <ul class="footer-links-list">
+                <li><a href="#" class="footer-link">Private Dining</a></li>
+                <li><a href="#" class="footer-link">Weekly Meal Prep</a></li>
+                <li><a href="#" class="footer-link">Special Events</a></li>
+                <li><a href="#" class="footer-link">Dietary Needs</a></li>
+                <li><a href="#" class="footer-link">Corporate Dining</a></li>
+                <li><a href="#" class="footer-link">Wine Pairing Experience</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 4: Support & Contact -->
+        <div>
+            <h3 class="footer-col-title">Support</h3>
+            <div class="footer-contact-info">
+                <p>18 W 27th Street, Lekki Lagos — Nigeria</p>
+                <p>+234 812 463 7783<br>+234 813 748 9784</p>
+            </div>
+        </div>
+
+        <!-- Col 5: Social Media Icons -->
+        <div class="footer-social-col">
+            <a href="#" class="social-icon-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon-link" aria-label="X (Twitter)">𝕏</a>
+            <a href="#" class="social-icon-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-icon-link" aria-label="Instagram">📷</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom-divider"></div>
+
+    <div class="footer-bottom-row">
+        <ul class="footer-bottom-links">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <div>
+            Sylvia Ferrys Kitchen &copy; 2026 All Rights Reserved | <span class="footer-dev-credit">Designed by Donemmynaija Software Development</span>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>
