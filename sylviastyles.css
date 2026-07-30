@@ -982,7 +982,7 @@
         max-width: 1300px;
         margin: 0 auto;
         height: 450px;
-        background: linear-gradient(rgba(44, 43, 43, 0.7), rgba(0,0,0,0.7)), url('./Images/download.jpg') center/cover no-repeat;
+        background: linear-gradient(rgba(44, 43, 43, 0.7), rgba(0,0,0,0.7)), url('./images/download.jpg') center/cover no-repeat;
         border-radius: 12px;
         border: 1px solid #8c8c10;
         display: flex;
